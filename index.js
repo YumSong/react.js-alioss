@@ -242,4 +242,4 @@ class   UploadImages extends React.Component{
                    
 
 
-    export default UploadImages;                 
+export default UploadImages;                 

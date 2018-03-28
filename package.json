@@ -1,8 +1,8 @@
 {
   "name": "uploadimage_alioss",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Front desk realization of Ali cloud picture uploading",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,10 +16,19 @@
     "vue.js",
     "uploadImage"
   ],
-  "author": "zcy",
+  "author": "anyutz",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/antiantian/react.js-alioss/issues"
   },
-  "homepage": "https://github.com/antiantian/react.js-alioss#readme"
+  "homepage": "https://github.com/antiantian/react.js-alioss#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1"
+  },
+  "dependencies": {
+    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0"
+  }
 }

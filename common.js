@@ -4,7 +4,7 @@
  * @date    2018-03-28 09:51:18
  * @version $Id$
  */
-
+import {Modal,message ,Icon, Input,Button} from 'antd'; 
 //上传图片到阿里云  
 
   let current_checkpoint;
@@ -57,20 +57,6 @@ const progress = (p, checkpoint) => {
             
           })
       })
-      //   uploadFileClient.multipartUpload(key, file,options).then(function (res) {
-      //   console.log('upload success: %j', res);
-      //   current_checkpoint = null;
-      //   uploadFileClient = null;
-      // }).catch(function (err) {
-      //   if (uploadFileClient && uploadFileClient.isCancel()) {
-      //     message.error('stop-upload!');
-      //   } else {
-      //     message.error(err);
-      //   }
-      // });
 
 }  //上传图片初始化信息
-module.exports = {
-	uploadFile,
-	
-}
+export default uploadFile
