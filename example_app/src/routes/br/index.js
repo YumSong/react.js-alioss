@@ -32,7 +32,9 @@ var _moment = require('moment');
 
 var _moment2 = _interopRequireDefault(_moment);
 
-require('./style.less');
+var _style = require('./style.less');
+
+var _style2 = _interopRequireDefault(_style);
 
 var _common = require('./common');
 
@@ -211,12 +213,12 @@ var UploadImages = function (_React$Component) {
           }
           return _react2.default.createElement(
             'div',
-            { className: 'block', style: {
+            { className: _style2.default.block, style: {
                 borderColor: item.fail == 'true' ? 'red' : '#dfdfdf'
               } },
             _react2.default.createElement(
               'div',
-              { className: 'blockinner', style: {
+              { className: _style2.default.blockinner, style: {
                   width: '100%',
                   height: '100%',
                   overflow: 'hidden'
@@ -224,21 +226,21 @@ var UploadImages = function (_React$Component) {
                 } },
               _react2.default.createElement(
                 'span',
-                { className: 'reporate' },
+                { className: _style2.default.reporate },
                 _react2.default.createElement(
                   'span',
-                  { className: 'inconWrap' },
-                  _react2.default.createElement(_icon2.default, { className: 'icons', type: 'delete', onClick: function onClick() {
+                  { className: _style2.default.inconWrap },
+                  _react2.default.createElement(_icon2.default, { className: _style2.default.icons, type: 'delete', onClick: function onClick() {
                       _this.deleteFile(item.url);
                     } }),
-                  _react2.default.createElement(_icon2.default, { className: 'icons', type: 'eye-o', onClick: function onClick() {
+                  _react2.default.createElement(_icon2.default, { className: _style2.default.icons, type: 'eye-o', onClick: function onClick() {
                       _this.showMaodal(item.url, natureSizeWidth);
                     } })
                 )
               ),
               _react2.default.createElement(
                 'p',
-                { className: ' uploadState ' + (item.fail == 'true' ? 'error' : '') },
+                { className: ' ' + _style2.default.uploadState + ' ' + (item.fail == 'true' ? _style2.default.error : '') },
                 mess
               ),
               _react2.default.createElement('img', { style: { width: '100%', height: 'auto' }, src: item.url })
@@ -296,10 +298,10 @@ var UploadImages = function (_React$Component) {
         this.uploadImageElement(this.state.uploadMess),
         (limit && limituploadMess && limituploadMess.length < limit || !limit || !limituploadMess) && _react2.default.createElement(
           'a',
-          { href: 'javascript:;', className: "upload" },
+          { href: 'javascript:;', className: _style2.default.upload },
           _react2.default.createElement(_icon2.default, { type: 'plus' }),
           '\u4E0A\u4F20\u56FE\u7247',
-          _react2.default.createElement('input', { type: 'file', className: "change", onChange: this.uploadImags })
+          _react2.default.createElement('input', { type: 'file', className: _style2.default.change, onChange: this.uploadImags })
         ),
         _react2.default.createElement(
           _modal2.default,

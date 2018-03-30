@@ -4,6 +4,7 @@ import styles from './IndexPage.css';
 import { Breadcrumb, Icon } from 'antd';
 //import UploadImages  from '../components/DefineUpload/index.js';
 import UploadImages  from 'uploadimage_alioss'
+//import UploadImages  from './br'
 console.log(UploadImages)
 const IndexPage  = ({ dispatch,indexapp}) => { 
   const {values} = indexapp 

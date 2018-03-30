@@ -199,7 +199,7 @@ class   UploadImages extends React.Component{
                          <Icon className="icons" type="eye-o" onClick={()=>{this.showMaodal(item.url,natureSizeWidth)}} />
                        </span>
                     </span>
-                    <p className={` 'uploadState' ${item.fail=='true' ? 'error': ''}`}>{mess}</p>
+                    <p className={` uploadState ${item.fail=='true' ? 'error': ''}`}>{mess}</p>
                      <img style={{width:'100%',height:'auto'}} src={item.url}/>
                   </div>
                  
